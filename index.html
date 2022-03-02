@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Use Strict</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>How to check whether a string contains a substring in JavaScript?</h2>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script>
+      (function(){
+        var cat = "cat";
+let dog = "dog";
+
+var animals = () => {
+    var giraffe = "giraffe";
+    let lion = "lion";
+
+    console.log(cat);  //will print 'cat'.
+    console.log(dog);  //will print 'dog', because dog was declared outside this function (like var cat).
+
+    console.log(giraffe); //will print 'giraffe'.
+    console.log(lion); //will print 'lion', as lion is within scope.
+}
+animals();
+console.log(giraffe); //will print 'giraffe', as giraffe is a global variable (var).
+console.log(lion); //will print 'giraffe', as giraffe is a global variable (var).
+
+      })();
+    </script>
+  </body>
+</html>
